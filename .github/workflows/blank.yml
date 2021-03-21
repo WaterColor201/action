@@ -17,7 +17,7 @@ jobs:
 
     - name: Run a single-line script
       run: |
-        wget 'https://urs.earthdata.nasa.gov/oauth/authorize?client_id=BO_n7nTIlMljdvU6kRRB3g&response_type=code&redirect_uri=https://dy4owt9f80bz7.cloudfront.net/login&state=%2FSLC%2FSA%2FS1A_IW_SLC__1SDV_20210312T101145_20210312T101212_036964_045955_B6D9.zip'
+        wget 'https://urs.earthdata.nasa.gov/oauth/authorize?client_id=BO_n7nTIlMljdvU6kRRB3g&response_type=code&redirect_uri=https://dy4owt9f80bz7.cloudfront.net/login&state=%2FSLC%2FSA%2FS1A_IW_SLC__1SDV_20210312T101145_20210312T101212_036964_045955_B6D9.zip' -O 123.zip
 
     - name: Upload artifact
       uses: actions/upload-artifact@master
