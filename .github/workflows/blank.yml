@@ -32,10 +32,11 @@ jobs:
       run: |
         pip install requests
         pip install lxml
-        python spider.py
+        pip install scrapy
+        scrapy crawl picture
 
     - name: Upload artifact
       uses: actions/upload-artifact@master
       with:
         name: img
-        path: .
+        path: image

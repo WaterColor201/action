@@ -1,0 +1,6 @@
+# picture settings
+
+PICTURE_MAX_PAGE = 20
+PICTURE_SLEEP_TIME = 0.5
+PICTURE_CATEGORY = "all"
+PICTURE_TYPE = "hot"
