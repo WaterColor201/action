@@ -8,5 +8,5 @@ class BiliPipeline:
         res = requests.get(item["url"])
         with open(path.join(path.join(path.abspath('.'), 'image'), name), 'wb') as file:
             file.write(res.content)
-            print(name)
+            print(item["title"])
         return item
